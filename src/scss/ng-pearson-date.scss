@@ -1,0 +1,106 @@
+.pearsondate {
+  display: inline-block;
+  position: relative;
+}
+
+.pearsondate-button div, .pearsondate-action-link div {
+  display: inline;
+}
+
+.pearsondate-popup {
+  z-index: 10;
+  background-color: #fff;
+  border: solid 1px #000;
+  text-align: center;
+  width: 250px;
+  display: none;
+  position: absolute;
+  padding: 5px;
+  &.open {
+    display: block;
+  }
+}
+
+.pearsondate-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: #333;
+  font-size: 110%;
+  margin-top: -6px;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+    color: #333;
+  }
+  &:visited {
+    color: #333;
+  }
+}
+
+.pearsondate-calendar-header {
+  display: block;
+  padding: 2px 0;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.pearsondate-month {
+  display: inline-block;
+}
+
+a {
+  &.pearsondate-prev-month {
+    float: left;
+  }
+  &.pearsondate-next-month {
+    float: right;
+  }
+}
+
+.pearsondate-text-inputs {
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.pearsondate-input-wrapper {
+  width: 48%;
+  display: inline-block;
+}
+
+input {
+  &.pearsondate-date-input, &.pearsondate-time-input {
+    width: 100px;
+    margin: 0;
+    height: auto;
+    padding: 2px 3px;
+  }
+}
+
+table.pearsondate-calendar {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  margin-top: 5px;
+  th {
+    padding: 5px;
+  }
+  td {
+    padding: 5px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.pearsondate-popup-footer {
+  text-align: right;
+  display: block;
+}
+
+.pearsondate input.ng-invalid {
+  border: 1px solid #dd3b30;
+  &:focus {
+    outline-color: #dd3b30;
+  }
+}

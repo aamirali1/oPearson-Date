@@ -1,0 +1,13 @@
+{
+  "name": "oPearsonDate",
+  "version": "1.0",
+  "main": ["dist/o-pearson-date.js", "dist/o-pearson-date.css"],
+  "ignore": [
+    "bower_components",
+    "node_modules",
+    "spec"
+   ],
+  "dependencies": {
+    "angular": "~1.2.0"
+  }
+}

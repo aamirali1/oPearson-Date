@@ -1,0 +1,20 @@
+{
+  "description": "Date Picker component",
+  "origamiType": "module",
+  "origamiVersion": 1,
+  "support": "https://github.com/Financial-Times/o-datepicker/issues",
+  "supportStatus": "active",
+  "browserFeatures": {
+    "required": [
+      "queryselector",
+      "css-boxsizing"
+    ]
+  },
+  "demos": [
+    {
+      "path": "/demos/index.html",
+      "expanded": false,
+      "description": ""
+    }
+  ]
+}

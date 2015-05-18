@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html data-ng-app='oPearsonDateDemo'>
+<head>
+    <title>Pearson Origami Date Demo</title>
+    <link rel="stylesheet" type="text/css" href="..\main.css" media="all" />
+    <style type="text/css">
+        form.ng-dirty .ng-invalid .pearsondate-button {
+            border: solid 1px red;
+        }
+    </style>
+</head>
+<body>
+<div ng-controller='DemoCtrl'>
+    <form name='date_form' novalidate>
+        <p>
+            <label>Please select a date: </label>
+            <pearson-datepicker name='myDate' ng-model='myDate' disable-timepicker="true"  disable-clear-button ="true" ></pearson-datepicker>
+        </p>
+
+
+        <br><br>
+
+        <p>
+            <label>Please select a date/time: </label>
+            <pearson-datepicker name='myDate' ng-model='myDateTime' disable-timepicker="false"></pearson-datepicker>
+        </p>
+
+    </form>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.js"></script>
+<script type="text/javascript" src="../main.js"></script>
+<script type='text/javascript'>
+    var app = angular.module("oPearsonDateDemo", ["oPearsonDate"]);
+    app.config(function(oPearsonDateDefaultsProvider) {
+        return oPearsonDateDefaultsProvider.set({
+        });
+    });
+    app.controller("DemoCtrl", function($scope) {
+        $scope.myDate = null
+        $scope.setToToday = function() { $scope.myDate = new Date(); }
+    });
+</script>
+</body>
+</html>
